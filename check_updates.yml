@@ -4,5 +4,5 @@
   gather_facts: true
 
   tasks:
-  - name: Installing Updates (yum)
+  - name: Checking OS patch updates (yum)
     shell: yum check-updates > /tmp/os-patch-updates.output
