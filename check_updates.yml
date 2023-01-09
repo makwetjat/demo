@@ -1,0 +1,8 @@
+---
+- hosts: opensrc
+  become: yes
+  gather_facts: true
+
+  tasks:
+  - name: Installing Updates (yum)
+    shell: yum check-updates > /tmp/os-patch-updates.output
